@@ -36,7 +36,7 @@ if submit_button:
     elif not timezone:
         st.error("Please enter your timezone.")
     else:
-        st.success("Meeting !")
+        st.success("Meeting preferences saved!")
         st.write("Timezone:", timezone)
         st.write("Working Hours:", working_hours_start.strftime("%I:%M %p"), "to", working_hours_end.strftime("%I:%M %p"))
         st.write("Heads-Down Time:", heads_down_start.strftime("%I:%M %p"), "to", heads_down_end.strftime("%I:%M %p"))

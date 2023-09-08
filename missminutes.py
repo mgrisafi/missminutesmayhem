@@ -1,8 +1,22 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
+from PIL import Image
 
-st.title("Hackathon")
+st.title("Welcome to Miss Minutes Management!")
+st.header("Brought to you by the letter M, and Phil")
 
-if 'key' not in st.session_state:
-    st.session_state['key'] = 'value'
+
+miss_min1 = Image.open("miss_minute1.png")
+st.image(miss_min1, caption="Let Miss Minutes Do the Minding!")
+
+fields = {
+    "time_zone": 0,
+    "working_hours_start": 0,
+    "working_hours_end": 0,
+    "heads_down_time_start": 0,
+    "heads_down_time_end": 0,
+}
+
+
+for key, value in fields.items():
+    if key not in st.session_state:
+        st.session_state[key] = value

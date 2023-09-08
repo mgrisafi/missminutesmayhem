@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.title("Welcome to Miss Minutes Management!")
+st.title("Welcome to Miss Minutes Meeting Manager!")
 st.header("Brought to you by the letter M, and Phil")
 
 
